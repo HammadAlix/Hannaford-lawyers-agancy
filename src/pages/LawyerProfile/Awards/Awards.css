@@ -1,0 +1,149 @@
+.achievements-container {
+    background-color: #0B1125;
+    color: #ffffff;
+    padding: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievements-list li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.achievements-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+/* Responsive Design */
+
+/* Large screens (1200px and above) - Original layout */
+@media (min-width: 1200px) {
+    .achievements-container {
+        padding: 40px;
+    }
+    .achievements-list li {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        padding-left: 20px;
+        font-size: 1em;
+    }
+    .achievements-list li::before {
+        font-size: 1.5em;
+    }
+}
+
+/* Medium-large screens (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .achievements-container {
+        padding: 35px;
+    }
+    .achievements-list li {
+        margin-bottom: 18px;
+        line-height: 1.6;
+        padding-left: 18px;
+        font-size: 0.98em;
+    }
+    .achievements-list li::before {
+        font-size: 1.4em;
+    }
+}
+
+/* Medium screens (768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .achievements-container {
+        padding: 30px;
+    }
+    .achievements-list li {
+        margin-bottom: 16px;
+        line-height: 1.5;
+        padding-left: 16px;
+        font-size: 0.95em;
+    }
+    .achievements-list li::before {
+        font-size: 1.3em;
+    }
+}
+
+/* Small to medium screens (576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .achievements-container {
+        padding: 25px;
+        border-radius: 8px;
+    }
+    .achievements-list li {
+        margin-bottom: 15px;
+        line-height: 1.5;
+        padding-left: 15px;
+        font-size: 0.9em;
+    }
+    .achievements-list li::before {
+        font-size: 1.2em;
+    }
+}
+
+/* Small screens (481px to 575px) */
+@media (max-width: 575px) and (min-width: 481px) {
+    .achievements-container {
+        padding: 20px;
+        border-radius: 6px;
+    }
+    .achievements-list li {
+        margin-bottom: 14px;
+        line-height: 1.4;
+        padding-left: 14px;
+        font-size: 0.85em;
+    }
+    .achievements-list li::before {
+        font-size: 1.1em;
+    }
+}
+
+/* Very small screens (320px to 480px) */
+@media (max-width: 480px) {
+    .achievements-container {
+        padding: 15px;
+        border-radius: 4px;
+    }
+    .achievements-list li {
+        margin-bottom: 12px;
+        line-height: 1.4;
+        padding-left: 12px;
+        font-size: 0.8em;
+    }
+    .achievements-list li::before {
+        font-size: 1em;
+    }
+}
+
+/* Extra small screens (below 320px) */
+@media (max-width: 319px) {
+    .achievements-container {
+        padding: 12px;
+        border-radius: 2px;
+    }
+    .achievements-list li {
+        margin-bottom: 10px;
+        line-height: 1.3;
+        padding-left: 10px;
+        font-size: 0.75em;
+    }
+    .achievements-list li::before {
+        font-size: 0.9em;
+    }
+}

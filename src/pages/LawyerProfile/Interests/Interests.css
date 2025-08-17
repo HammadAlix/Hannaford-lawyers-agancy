@@ -1,0 +1,258 @@
+/* Interests.css */
+
+.Interests-container {
+    background-color: #0B1125;
+    color: #ffffff;
+    padding: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.Interests-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Interests-details {
+    flex: 1;
+}
+
+.Interests-details h1 {
+    margin: 0;
+    width: 100%;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.Interests-subheader {
+    margin: 0;
+    font-size: 3.5em;
+    font-weight: normal;
+}
+
+.Interests-divider {
+    width: 1px;
+    background-color: #F9F8FA;
+    height: 200px;
+    margin: 0 20px;
+}
+
+.Interests-info {
+    line-height: 30px;
+    font-size: 18px;
+    flex: 2;
+}
+
+.Interests-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Interests-info ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+
+/* Large screens (1200px and above) - Original layout */
+@media (min-width: 1200px) {
+    .Interests-container {
+        padding: 40px;
+    }
+    .Interests-details h1 {
+        font-size: 3.5em;
+    }
+    .Interests-subheader {
+        font-size: 3.5em;
+    }
+    .Interests-divider {
+        height: 200px;
+        margin: 0 20px;
+    }
+    .Interests-info {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+/* Medium-large screens (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .Interests-container {
+        padding: 35px;
+    }
+    .Interests-details h1 {
+        font-size: 3em;
+    }
+    .Interests-subheader {
+        font-size: 3em;
+    }
+    .Interests-divider {
+        height: 180px;
+        margin: 0 18px;
+    }
+    .Interests-info {
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+
+/* Medium screens (768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .Interests-container {
+        padding: 30px;
+    }
+    .Interests-details h1 {
+        font-size: 2.5em;
+    }
+    .Interests-subheader {
+        font-size: 2.5em;
+    }
+    .Interests-divider {
+        height: 160px;
+        margin: 0 15px;
+    }
+    .Interests-info {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+/* Small to medium screens (576px to 767px) - Start stacking */
+@media (max-width: 767px) and (min-width: 576px) {
+    .Interests-container {
+        padding: 25px;
+    }
+    .Interests-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+    .Interests-details {
+        text-align: center;
+    }
+    .Interests-details h1 {
+        font-size: 2.2em;
+    }
+    .Interests-subheader {
+        font-size: 2.2em;
+    }
+    .Interests-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .Interests-info {
+        font-size: 15px;
+        line-height: 24px;
+        text-align: left;
+    }
+}
+
+/* Small screens (481px to 575px) */
+@media (max-width: 575px) and (min-width: 481px) {
+    .Interests-container {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .Interests-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+    .Interests-details {
+        text-align: center;
+    }
+    .Interests-details h1 {
+        font-size: 1.8em;
+    }
+    .Interests-subheader {
+        font-size: 1.8em;
+    }
+    .Interests-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .Interests-info {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .Interests-info ul li {
+        margin-bottom: 8px;
+    }
+}
+
+/* Very small screens (320px to 480px) */
+@media (max-width: 480px) {
+    .Interests-container {
+        padding: 15px;
+        border-radius: 6px;
+    }
+    .Interests-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+    .Interests-details {
+        text-align: center;
+    }
+    .Interests-details h1 {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+    .Interests-subheader {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+    .Interests-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .Interests-info {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .Interests-info ul li {
+        margin-bottom: 6px;
+    }
+}
+
+/* Extra small screens (below 320px) */
+@media (max-width: 319px) {
+    .Interests-container {
+        padding: 12px;
+        border-radius: 4px;
+    }
+    .Interests-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    .Interests-details {
+        text-align: center;
+    }
+    .Interests-details h1 {
+        font-size: 1.3em;
+        line-height: 1.1;
+    }
+    .Interests-subheader {
+        font-size: 1.3em;
+        line-height: 1.1;
+    }
+    .Interests-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .Interests-info {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .Interests-info ul li {
+        margin-bottom: 5px;
+    }
+}

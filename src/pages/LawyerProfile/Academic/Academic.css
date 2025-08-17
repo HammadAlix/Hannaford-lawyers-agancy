@@ -1,0 +1,258 @@
+/* Academic.css */
+
+.academic-container {
+    background-color: #0B1125;
+    color: #ffffff;
+    padding: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.academic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.academic-details {
+    flex: 1;
+}
+
+.academic-details h1 {
+    margin: 0;
+    width: 100%;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.academic-subheader {
+    margin: 0;
+    font-size: 3.5em;
+    font-weight: normal;
+}
+
+.academic-divider {
+    width: 1px;
+    background-color: #F9F8FA;
+    height: 200px;
+    margin: 0 20px;
+}
+
+.academic-info {
+    line-height: 30px;
+    font-size: 18px;
+    flex: 2;
+}
+
+.academic-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.academic-info ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+
+/* Large screens (1200px and above) - Original layout */
+@media (min-width: 1200px) {
+    .academic-container {
+        padding: 40px;
+    }
+    .academic-details h1 {
+        font-size: 3.5em;
+    }
+    .academic-subheader {
+        font-size: 3.5em;
+    }
+    .academic-divider {
+        height: 200px;
+        margin: 0 20px;
+    }
+    .academic-info {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+/* Medium-large screens (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .academic-container {
+        padding: 35px;
+    }
+    .academic-details h1 {
+        font-size: 3em;
+    }
+    .academic-subheader {
+        font-size: 3em;
+    }
+    .academic-divider {
+        height: 180px;
+        margin: 0 18px;
+    }
+    .academic-info {
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+
+/* Medium screens (768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .academic-container {
+        padding: 30px;
+    }
+    .academic-details h1 {
+        font-size: 2.5em;
+    }
+    .academic-subheader {
+        font-size: 2.5em;
+    }
+    .academic-divider {
+        height: 160px;
+        margin: 0 15px;
+    }
+    .academic-info {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+/* Small to medium screens (576px to 767px) - Start stacking */
+@media (max-width: 767px) and (min-width: 576px) {
+    .academic-container {
+        padding: 25px;
+    }
+    .academic-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+    .academic-details {
+        text-align: center;
+    }
+    .academic-details h1 {
+        font-size: 2.2em;
+    }
+    .academic-subheader {
+        font-size: 2.2em;
+    }
+    .academic-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .academic-info {
+        font-size: 15px;
+        line-height: 24px;
+        text-align: left;
+    }
+}
+
+/* Small screens (481px to 575px) */
+@media (max-width: 575px) and (min-width: 481px) {
+    .academic-container {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .academic-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+    .academic-details {
+        text-align: center;
+    }
+    .academic-details h1 {
+        font-size: 1.8em;
+    }
+    .academic-subheader {
+        font-size: 1.8em;
+    }
+    .academic-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .academic-info {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .academic-info ul li {
+        margin-bottom: 8px;
+    }
+}
+
+/* Very small screens (320px to 480px) */
+@media (max-width: 480px) {
+    .academic-container {
+        padding: 15px;
+        border-radius: 6px;
+    }
+    .academic-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+    .academic-details {
+        text-align: center;
+    }
+    .academic-details h1 {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+    .academic-subheader {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+    .academic-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .academic-info {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .academic-info ul li {
+        margin-bottom: 6px;
+    }
+}
+
+/* Extra small screens (below 320px) */
+@media (max-width: 319px) {
+    .academic-container {
+        padding: 12px;
+        border-radius: 4px;
+    }
+    .academic-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    .academic-details {
+        text-align: center;
+    }
+    .academic-details h1 {
+        font-size: 1.3em;
+        line-height: 1.1;
+    }
+    .academic-subheader {
+        font-size: 1.3em;
+        line-height: 1.1;
+    }
+    .academic-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .academic-info {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .academic-info ul li {
+        margin-bottom: 5px;
+    }
+}

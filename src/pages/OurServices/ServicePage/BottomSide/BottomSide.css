@@ -1,0 +1,235 @@
+.container {
+    background-color: #0B1125;
+    padding: 10px 110px;
+}
+
+.sections {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 100px;
+}
+
+.left-section {
+    flex: 1;
+    margin: 10px;
+    padding-right: 20px;
+    margin-left: 30px;
+    width: 50%;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 69px;
+    position: relative;
+}
+
+.left-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1px;
+    width: 1px;
+    background: linear-gradient(to bottom, rgba(249, 248, 250, 0) 0%, #F9F8FA 46.35%, rgba(249, 248, 250, 0) 100%);
+    margin-right: 13px;
+}
+
+.right-section {
+    padding-top: 10px;
+    flex: 1;
+    margin: 10px;
+    width: 50%;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+}
+
+.right-section p {
+    line-height: 28px;
+}
+
+.right-section ul {
+    list-style-type: disc;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.right-section ul li {
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.contact-button {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #8AAEF0;
+    color: #292F40;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+/* Tablet and smaller desktop screens */
+@media (max-width: 1024px) {
+    .container {
+        padding: 10px 80px;
+    }
+    
+    .sections {
+        margin-top: 80px;
+    }
+    
+    .left-section {
+        font-size: 28px;
+        line-height: 60px;
+        margin-left: 20px;
+        padding-right: 15px;
+    }
+    
+    .right-section {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    .contact-button {
+        width: 180px;
+        height: 45px;
+        font-size: 15px;
+    }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px 40px;
+    }
+    
+    .sections {
+        flex-direction: column;
+        margin-top: 60px;
+        gap: 40px;
+    }
+    
+    .left-section {
+        width: 100%;
+        margin-left: 0;
+        padding-right: 0;
+        font-size: 24px;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .left-section::before {
+        display: none;
+    }
+    
+    .right-section {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .right-section ul {
+        margin-left: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-button {
+        width: 160px;
+        height: 45px;
+        margin-top: 40px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px 20px;
+    }
+    
+    .sections {
+        margin-top: 40px;
+        gap: 30px;
+    }
+    
+    .left-section {
+        font-size: 20px;
+        line-height: 40px;
+        margin: 5px;
+    }
+    
+    .right-section {
+        font-size: 15px;
+        line-height: 24px;
+        margin: 5px;
+    }
+    
+    .right-section ul {
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .right-section ul li {
+        margin-top: 10px;
+    }
+    
+    .contact-button {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    
+    .contact-button:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+    .container {
+        padding: 8px 15px;
+    }
+    
+    .sections {
+        margin-top: 30px;
+        gap: 25px;
+    }
+    
+    .left-section {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    
+    .right-section {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .contact-button {
+        width: 140px;
+        height: 38px;
+        font-size: 13px;
+        margin-top: 25px;
+    }
+}

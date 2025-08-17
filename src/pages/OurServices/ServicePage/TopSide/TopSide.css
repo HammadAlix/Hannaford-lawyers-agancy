@@ -1,0 +1,46 @@
+.shipbuilding-page {
+    position: relative;
+    width: 100%;
+    height: 10%; /* Adjust height as needed */
+  }
+  
+  .shipbuilding-page img {
+    width: 100%;
+    height: 70vh; /* Set the image height to 70% of viewport height */
+    object-fit: cover;
+  }
+  
+  .shipbuilding-page::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust height as needed for the gradient effect */
+    background: linear-gradient(to top, #0B1125, transparent);
+    z-index: 0; /* Ensure gradient is behind the content */
+  }
+  
+  .background-text {
+    position: absolute;
+    top: 75%; /* Adjusted to 75% as per your requirement */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Ensure text is above the gradient */
+  }
+  
+  .background-text h3 {
+    color: #F9F8FA;
+    font-weight: 400;
+
+    margin: 0;
+    font-size: 1.8rem; /* Adjust font size as needed */
+  }
+  
+  .background-text h1 {
+    margin: 0;
+    font-size: 3rem; /* Adjust font size as needed */
+  }
+  

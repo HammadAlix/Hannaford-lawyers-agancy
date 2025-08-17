@@ -1,0 +1,159 @@
+.ship-marine {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 110px;
+    background-color: #0B1125;
+    gap: 40px;
+}
+
+.ship-marine-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    flex: 1;
+    max-width: 500px;
+}
+
+.ship-marine-slide img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.ship-marine-slide img:hover {
+    transform: scale(1.05);
+}
+
+.cruise-control {
+    line-height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+    cursor: pointer;
+    padding-top: 5px;
+    gap: 20px;
+}
+
+.ship-marine-arrow {
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.ship-marine-arrow img {
+    cursor: pointer;
+    width: 23px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.ship-marine-arrow img:hover {
+    transform: translateX(5px);
+}
+
+.ship-marine-undertext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    flex: 1;
+}
+
+.ship-marine-undertext h2 {
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+}
+
+.ship-marine-undertext p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* Tablet and smaller desktop screens */
+@media (max-width: 1024px) {
+    .ship-marine {
+        padding: 30px 80px;
+        gap: 30px;
+    }
+    
+    .ship-marine-undertext h2 {
+        font-size: 1.3rem;
+    }
+    
+    .ship-marine-undertext p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 768px) {
+    .ship-marine {
+        flex-direction: column;
+        padding: 30px 40px;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .ship-marine-slide {
+        max-width: 600px;
+        width: 100%;
+    }
+    
+    .cruise-control {
+        margin-top: 25px;
+        gap: 15px;
+    }
+    
+    .ship-marine-undertext h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .ship-marine {
+        padding: 20px 20px;
+        gap: 40px;
+    }
+    
+    .cruise-control {
+        margin-top: 20px;
+        gap: 12px;
+    }
+    
+    .ship-marine-arrow img {
+        width: 18px;
+    }
+    
+    .ship-marine-undertext h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .ship-marine-undertext p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+    .ship-marine {
+        padding: 15px 15px;
+        gap: 30px;
+    }
+    
+    .ship-marine-undertext h2 {
+        font-size: 1.1rem;
+    }
+    
+    .ship-marine-undertext p {
+        font-size: 0.85rem;
+    }
+}
